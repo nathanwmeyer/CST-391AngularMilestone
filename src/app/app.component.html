@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 0, 0)">
+  <a class="navbar-brand" routerLink="/">Brand</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+    <a class="nav-item nav-link" routerLink="/">Home</a>
+    <a class="nav-item nav-link" href="https://www.gcu.edu">GCU Home Page</a>
+    <a class="nav-item nav-link" routerLink="/create">Create</a>
+    <a class="nav-item nav-link" (click)="displayProducts()">Product List</a>
+    </div>
+  </div>
+</nav>
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}
+  </h1>
+</div>
+
+<router-outlet></router-outlet>

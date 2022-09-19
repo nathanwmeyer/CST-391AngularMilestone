@@ -1,0 +1,10 @@
+<div class="list-group" *ngIf="!selectedProduct">
+  <button class="list-group-item" active
+  *ngFor="let product of products"
+  (click)="onSelectProduct(product)">
+    <h5>{{ product.Name | uppercase }}</h5>Type: {{ product.Type }}
+  </button>
+</div>
+
+<app-display-product *ngIf="selectedProduct" [product]="selectedProduct"></app-display-product>
+
